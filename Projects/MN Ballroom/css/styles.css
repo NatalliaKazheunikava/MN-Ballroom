@@ -90,9 +90,9 @@ img#navbar-logo.img-fluid {
       
     }
 
-    .nav-links-btn:active {
+    /*.nav-links-btn:active {
         font-weight: bolder;
-    }
+    }*/
 
 body {
     background-color: black; 
@@ -264,7 +264,7 @@ div.col {
     z-index: 1;
   }
 
-  .aboutus-body {
+  .aboutus-body, .services-body, .contact-body {
     background-image: linear-gradient(to left, #000000, #050f46, #0f0874, #473dd4);
       color: rgb(255, 255, 255);
       text-align: center;
@@ -309,7 +309,62 @@ div.col {
       margin-bottom: 20px;
   }
 
-  #aboutus-container {
+  #aboutus-container, #services-container, #contact-container {
       background-color: transparent;
   }
 
+  #carousel-container {
+    margin:5%;
+    width:60%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+    #carouselButton {
+        position: relative;
+        bottom: 0;
+        margin-left: auto;
+        margin-right: auto;;
+        z-index: 100;
+        color:rgb(5, 252, 128);
+        border: .3px solid rgb(162, 152, 206);
+    }
+
+    #carouselButton:active {
+        background-color: rgb(5, 252, 128);
+        color: black;
+        border:.3px solid rgb(255, 255, 255);
+    }
+
+    .carousel-inner > .carousel-item > img {    
+    height: 600px;
+    margin: auto;
+    }
+    
+    div.carousel-indicators {
+        margin-bottom: 10%;
+    }
+    
+    .our-address {
+        margin:auto;
+        padding:10px;
+    }
+
+    .btn-link {
+        color:white;
+        background:transparent;
+        text-decoration: none;
+    }
+
+    .form1 {
+        margin:auto;
+    }
+
+    div.address {
+        margin-top: 0;
+    }
+
+    footer.site-footer {
+        padding-top: 20px;
+        margin:auto;
+    }
