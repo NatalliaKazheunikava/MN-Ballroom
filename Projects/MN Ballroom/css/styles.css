@@ -1,8 +1,7 @@
 /*background-image: linear-gradient(to right, #000000, #0e0546, #3046C5);*/
 :root {
     --blue: #05115a;
-    --red: #60106b;
-    --lightred: rgb(255, 0, 0);
+    --lightyellow: rgb(5, 252, 128);
 }
 
 
@@ -20,7 +19,7 @@
 
 #MN {
     position: absolute;
-    right:0%;
+    right:0;
     height: 600px;
     padding: 10px;
   }
@@ -29,15 +28,23 @@
     display: grid;
     grid-template-columns: 0.2fr auto 1fr;
     align-items:center;
-    height: 150px;
-    width: 92%;
+    height: 130px;
+    width: 95%;
     max-width: 1720px;
     margin: 0 auto;
     padding:0;
 }
 
+img#navbar-logo.img-fluid {
+    margin: 3%;
+}
+
 #navbar-logo {
     cursor: pointer;
+    width: 100%;
+    padding: 0;
+    margin-left: 5%;
+    margin-top: -8%;
 }
 
 .nav-menu {
@@ -46,7 +53,7 @@
     grid-template-columns: repeat(6, auto);
     list-style: none;
     text-align:center;
-    width: 80%;
+    width: 60%;
     justify-self: end;
 }
 
@@ -60,7 +67,7 @@
 }
 
 .nav-links:hover {
-    color:var(--lightred);
+    color:var(--lightyellow);
     transition: all 0.2s ease-out; 
 }
 
@@ -77,8 +84,14 @@
   }
     .nav-links-btn:hover {
       color: black;
-      background-color: white;
+      background-color: rgb(5, 252, 128);
+      animation: ease-out;
+      animation-duration: 2s;
       
+    }
+
+    .nav-links-btn:active {
+        font-weight: bolder;
     }
 
 body {
@@ -93,11 +106,6 @@ body {
     transition: all 0.3s ease-in-out;
     background: var(--blue);
 }
-
-img#navbar-logo.img-fluid {
-    margin-top:10px;
-}
-
 
 @media screen and (max-width: 768px) {
     .nav-container {
@@ -148,9 +156,9 @@ img#navbar-logo.img-fluid {
 
     .nav-links:hover {
         background-color: tranparent;
-        color: white;
+        color: rgb(5, 252, 128);
         transition: all 0.4s ease-out;
-        color: var(--lightred);
+        color: var(--lightyellow);
     }
 
     .navbar {
@@ -220,14 +228,18 @@ img#navbar-logo.img-fluid {
     #quote {
         z-index: 2;
     }
+
+    .nav-menu-aboutus.active {
+        background-image: linear-gradient(to left, #000000, #050f46, #0f0874, #473dd4);
+    }
 }
 
 .row {
     width:100%;
 }
 
-.div.row {
-    margin-top: 15px;
+div.row {
+    margin: 15px 0 0 0;  
 }
 
 div.col {
@@ -252,6 +264,52 @@ div.col {
     z-index: 1;
   }
 
+  .aboutus-body {
+    background-image: linear-gradient(to left, #000000, #050f46, #0f0874, #473dd4);
+      color: rgb(255, 255, 255);
+      text-align: center;
+      box-sizing: border-box;
+  }
+
+  .container-fluid-header {
+      padding-top: 25px;
+      padding-bottom: 20px;
+  }
+
+  #instructor1, #instructor2 {
+      max-height: 500px;
+      align-self: center;
+  }
     
+  #misha-description {
+      margin: auto;
+      margin-right: 5%;
+      font-family:Arial, Helvetica, sans-serif;
+      font-size: 19px;
+  }
   
+  .img-responsive {
+    max-width: 70%; /* or to whatever you want here */
+    max-height: auto; /* or to whatever you want here */
+  }
+
+  
+  #natasha-description {
+      margin: auto;
+      margin-left: 5%;
+      font-family:Arial, Helvetica, sans-serif;
+      font-size: 19px;
+  }
+
+  #instructor2 {
+      margin-top: 10px;
+  }
+
+  #natasha-photo {
+      margin-bottom: 20px;
+  }
+
+  #aboutus-container {
+      background-color: transparent;
+  }
 
