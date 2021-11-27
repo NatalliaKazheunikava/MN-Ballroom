@@ -356,6 +356,10 @@ div.col {
         text-decoration: none;
     }
 
+    .btn-link:hover {
+        color: rgb(5, 252, 128);
+    }
+
     .form1 {
         margin:auto;
     }
@@ -367,4 +371,8 @@ div.col {
     footer.site-footer {
         padding-top: 20px;
         margin:auto;
+    }
+
+    div.container.footer1 {
+        width:80%;
     }
